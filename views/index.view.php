@@ -20,7 +20,6 @@
             <div class="card">
                 <a href="product.php?id=<?= $product['id'] ?>">
                     <?php if (empty($product['image']) || !isset($product['image'])) { ?>
-
                         <img src="./inc/img/default.png" class="card-img-top" alt="product image not found">
                     <?php } else { ?>
                         <img src="./assets/product-imgs/<?= $product['image'] ?>" class="card-img-top" alt="<?= $product['title'] ?>">
