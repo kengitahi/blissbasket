@@ -18,13 +18,20 @@
     <div class="cards">
         <?php foreach ($model['products'] as $product) : ?>
             <div class="card">
-                <?php if (empty($product['image']) || !isset($product['image'])) { ?>
-                    <img src="./inc/img/default.png" class="card-img-top" alt="product image not found">
-                <?php } else { ?>
-                    <img src="./assets/product-imgs/<?= $product['image'] ?>" class="card-img-top" alt="<?= $product['title'] ?>">
-                <?php } ?>
+                <a href="product.php?id=<?= $product['id'] ?>">
+                    <?php if (empty($product['image']) || !isset($product['image'])) { ?>
+
+                        <img src="./inc/img/default.png" class="card-img-top" alt="product image not found">
+                    <?php } else { ?>
+                        <img src="./assets/product-imgs/<?= $product['image'] ?>" class="card-img-top" alt="<?= $product['title'] ?>">
+                    <?php } ?>
+                </a>
                 <div class="card-body">
-                    <h5 class="card-title"><?= $product['title'] ?></h5>
+                    <h2 class="card-title h5">
+                        <a href="product.php?id=<?= $product['id'] ?>" style="text-decoration:none;">
+                            <?= $product['title'] ?>
+                        </a>
+                    </h2>
                     <p class="card-text">
                         <?= $product['description'] ?>
                     </p>

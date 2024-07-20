@@ -35,6 +35,10 @@ body {
 	width: 100%;
 }
 
+.table-img:hover {
+	border: 2px solid rgb(123, 190, 254);
+}
+
 .delete-table-img,
 .update-img {
 	height: 150px;

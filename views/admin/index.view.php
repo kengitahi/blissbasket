@@ -24,10 +24,16 @@
                              <img src="../inc/img/default.png" class="rounded table-img">
 
                          <?php } else { ?>
-                             <img src="../assets/product-imgs/<?= $product['image'] ?>" class="rounded table-img">
+                             <a href="../product.php?id=<?= $product['id'] ?>" class="text-decoration-none">
+                                 <img src="../assets/product-imgs/<?= $product['image'] ?>" class="rounded table-img" title="View <?= $product['title'] ?>">
+                             </a>
                          <?php } ?>
                      </td>
-                     <td><?= $product['title'] ?></td>
+                     <td>
+                         <a href="../product.php?id=<?= $product['id'] ?>" class="text-decoration-none">
+                             <?= $product['title'] ?>
+                         </a>
+                     </td>
                      <td><?= '$' . $product['price'] ?></td>
                      <td><?= $product['create_date'] ?></td>
                      <td>
