@@ -3,6 +3,14 @@
     <div class="text-center text-white">
         <h2><small>Welcome</small></h2>
         <h1>Best Shopping Experience</h1>
+        <form action="search.php" method="post">
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" aria-label="Product search input" placeholder="Search products" name="search">
+                <div class="input-group-append">
+                    <button class="btn btn-secondary">Search</button>
+                </div>
+            </div>
+        </form>
     </div>
 </section>
 
