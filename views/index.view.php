@@ -19,7 +19,7 @@
         <?php foreach ($model['products'] as $product) : ?>
             <div class="card">
                 <?php if (empty($product['image']) || !isset($product['image'])) { ?>
-                    <img src="./inc/img/default.jpg" class="card-img-top" alt="product image not found">
+                    <img src="./inc/img/default.png" class="card-img-top" alt="product image not found">
                 <?php } else { ?>
                     <img src="./assets/product-imgs/<?= $product['image'] ?>" class="card-img-top" alt="<?= $product['title'] ?>">
                 <?php } ?>

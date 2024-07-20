@@ -15,7 +15,7 @@ $statement->execute(
 
 $product = $statement->fetch(PDO::FETCH_ASSOC) ?? null;
 
-$bag['products'] = $product;
+$bag['product'] = $product;
 $bag['title'] = $product['title'];
 
 view('product', $bag);

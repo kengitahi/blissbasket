@@ -21,9 +21,10 @@
                      <th scope="row"><?= $index + 1 ?></th>
                      <td>
                          <?php if (empty($product['image']) || !isset($product['image'])) { ?>
-                             Image Not added
+                             <img src="../inc/img/default.png" class="rounded table-img">
+
                          <?php } else { ?>
-                             <img src="../assets/product-imgs/<?= $product['image'] ?>" class="table-img">
+                             <img src="../assets/product-imgs/<?= $product['image'] ?>" class="rounded table-img">
                          <?php } ?>
                      </td>
                      <td><?= $product['title'] ?></td>
