@@ -3,6 +3,16 @@
      <p>
          <a href="create.php" class="btn btn-info btn-sm text-white fw-bold">Add Product</a>
      </p>
+     <div class="mb-3">
+         <form action="../search.php" method="post">
+             <div class="input-group mb-3">
+                 <input type="text" class="form-control" aria-label="Product search input" placeholder="Search products" name="search">
+                 <div class="input-group-append">
+                     <button class="btn btn-secondary">Search</button>
+                 </div>
+             </div>
+         </form>
+     </div>
      <table class="table table-striped">
          <thead>
              <tr>
